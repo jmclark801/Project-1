@@ -208,3 +208,28 @@ $("#search-button").on("click", function() {
     });
   });
 
+
+
+  // Header Scroll Stick
+$('#recommended-artists').scroll(function() {
+  console.log('scrolled');
+  // if ($('#track-header').scrollTop() >= 45) {
+  //   $('#track-header').addClass('sticky');
+  // } else {
+  //   $('#track-header').removeClass('sticky');
+  // }
+});
+
+
+
+
+// var header = document.getElementById("track-header");
+// var sticky = header.offsetTop;
+
+// function myFunction() {
+//   if (window.pageYOffset > sticky) {
+//     header.addClass("sticky");
+//   } else {
+//     header.removeClass("sticky");
+//   }
+// }

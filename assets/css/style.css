@@ -21,6 +21,11 @@ body{
     text-align:center;
     margin-bottom:25px;
 }
+
+table {
+    position: absolute;
+}
+
 tbody {
     font-size: 18px;
 }
@@ -40,6 +45,13 @@ thead {
 
 #title, #artist, #album {
     min-width: 22vw;
+}
+
+.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%; 
 }
 
 .artistImg, .recImg {

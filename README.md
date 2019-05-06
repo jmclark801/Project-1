@@ -11,7 +11,7 @@ The Tundea application uses several Spotify APIs to let users search for an arti
 
 ## Setup Instructions
 - A local server is needed for the callback API to work correctly.
--- The team used node/express with the 'npx serve' terminal command to run the local webserver.  We originally used the command: npx http-server -p 8081 but ran into issues with a last minute security setting that required Plan B.
+  - The team used node/express with the 'npx serve' terminal command to run the local webserver.  We originally used the command: npx http-server -p 8081 but ran into issues with a last minute security setting that required Plan B.
 
 ## Technologies Used
 - Spotify APIs
@@ -20,15 +20,15 @@ The Tundea application uses several Spotify APIs to let users search for an arti
 
 ## User Flow
 - Users log in using their Spotify User ID and Password
--- Authorization was implemented using the Implicit Grant Flow
--- For more information on the authorization flow, see https://developer.spotify.com/documentation/general/guides/authorization-guide/ 
--- https://tools.ietf.org/html/rfc6749#section-4.2 
+  - Authorization was implemented using the Implicit Grant Flow
+  - For more information on the authorization flow, see https://developer.spotify.com/documentation/general/guides/authorization-guide/ 
+  - https://tools.ietf.org/html/rfc6749#section-4.2 
 - Once logged in, users can search for an artist
--- The Artist Search API is documented here: https://developer.spotify.com/documentation/web-api/reference/search/search/
+  - The Artist Search API is documented here: https://developer.spotify.com/documentation/web-api/reference/search/search/
 - After searching for an artist, the results are presented to the user.
 - Users can then select the artist that they were searching for from the result set list
 - Selecting an artist will cause the application to look for recommendations based on the seed data
--- The Get-Recommendations API is documented here: https://developer.spotify.com/console/get-recommendations/
+  - The Get-Recommendations API is documented here: https://developer.spotify.com/console/get-recommendations/
 
 ## Future Enhancements
 - Create a new playlist based on recommendations that the user selected
